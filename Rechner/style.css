@@ -1,0 +1,58 @@
+:root {
+  --bg: #121212;
+  --fg: #e0e0e0;
+  --accent: #ff9800;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+.repo-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--fg);
+  text-decoration: none;
+}
+main a {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--fg);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 8px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+main a:hover {
+  opacity: 0.8;
+}
+.calc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.calc input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  border: none;
+}
+.calc button {
+  background: var(--accent);
+  color: var(--fg);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.calc button:hover { opacity: 0.8; }

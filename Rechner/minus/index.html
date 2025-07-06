@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Subtraktion</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a href="https://github.com/username/username.github.io" class="repo-link" target="_blank">GitHub</a>
+  <main class="calc">
+    <h1>Subtraktion</h1>
+    <input id="a" type="number" placeholder="Zahl 1">
+    <span>−</span>
+    <input id="b" type="number" placeholder="Zahl 2">
+    <button id="calc">=</button>
+    <p id="result"></p>
+    <p><a href="/">⟵ Startseite</a></p>
+  </main>
+<script>
+  document.getElementById('calc').addEventListener('click', function(){
+    const a = parseFloat(document.getElementById('a').value);
+    const b = parseFloat(document.getElementById('b').value);
+    if (isNaN(a) || isNaN(b)) { alert('Bitte beide Zahlen eingeben'); return; }
+    document.getElementById('result').textContent = a - b;
+  });
+</script>
+</body>
+</html>
